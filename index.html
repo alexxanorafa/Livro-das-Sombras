@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro das Sombras</title>
+  <meta name="description" content="Wicca - Tiragens Mágicas e Elementos">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Menu Navegação (mantido para outros projetos) -->
+  <header>
+    <div class="menu-icon" id="menuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="https://alexxanorafa.github.io/Tempo_e_Sonhos/" class="menu-item">Tempo e Sonhos</a></li>
+            <li><a href="https://alexxanorafa.github.io/Aneis_da_Sabedoria/" class="menu-item">Anéis da Sabedoria</a></li>
+            <li><a href="https://alexxanorafa.github.io/TarodeMarselha/" class="menu-item">Tarô de Marselha</a></li>
+            <li><a href="https://alexxanorafa.github.io/Runas-do-Destino/" class="menu-item">Runas do Destino</a></li>
+            <li><a href="https://alexxanorafa.github.io/Runas-Celtas/" class="menu-item">Runas Celtas</a></li>
+            <li><a href="https://alexxanorafa.github.io/Cartas-de-Sibila/" class="menu-item">Cartas de Sibila</a></li>
+            <li><a href="https://alexxanorafa.github.io/posicionamentodosastros/" class="menu-item">Carta Astral</a></li>
+            <li><a href="https://alexxanorafa.github.io/O-Construtor-do-Destino/" class="menu-item">O Construtor do Destino</a></li>
+            <li><a href="https://alexxanorafa.github.io/Tabuleiro-Quantico/" class="menu-item">Tabuleiro Quantico</a></li>
+            <li><a href="https://alexxanorafa.github.io/Oraculo-das-Pedras/" class="menu-item">Oráculo das Pedras</a></li>
+            <li><a href="https://alexxanorafa.github.io/I-Ching-Virtual/" class="menu-item">I Ching Virtual</a></li>
+            <li><a href="https://alexxanorafa.github.io/Biblioteca-Onirica/" class="menu-item">Biblioteca Onirica</a></li>
+            <li><a href="https://alexxanorafa.github.io/Kabbalah-Interativa/" class="menu-item">Kabbalah Interativa</a></li>
+            <li><a href="https://alexxanorafa.github.io/Almas-Conectadas/" class="menu-item">Almas Conectadas</a></li>
+            <li><a href="https://alexxanorafa.github.io/Pendulo-Divinatorio/" class="menu-item">Pendulo Divinatorio</a></li>
+            <li><a href="https://alexxanorafa.github.io/Buzios/" class="menu-item">Buzios</a></li>
+            <li><a href="https://alexxanorafa.github.io/Tasseografia/" class="menu-item">Tasseografia</a></li>
+            <li><a href="https://alexxanorafa.github.io/Xamanismo-Animal/" class="menu-item">Xamanismo Animal</a></li>
+            <li><a href="https://alexxanorafa.github.io/Animais-de-Poder/" class="menu-item">Animais de Poder</a></li>
+            <li><a href="https://alexxanorafa.github.io/Jornada-Arquetipica/" class="menu-item">Jornada Arquetípica</a></li>
+            <li><a href="https://alexxanorafa.github.io/Whispering-Shadows/" class="menu-item">Whispering Shadows</a></li>
+            <li><a href="https://alexxanorafa.github.io/Whispering-Shadows-2/" class="menu-item">Whispering Shadows 2</a></li>
+            <li><a href="https://alexxanorafa.github.io/Whispering-Shadows-3/" class="menu-item">Whispering Shadows 3</a></li>
+            <li><a href="https://alexxanorafa.github.io/The-Da-Vinci-Code/" class="menu-item">The Da Vinci Code</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Título alterado -->
+  <h1>Livro das Sombras</h1>
+
+  <!-- Seletor de Leitura adaptado -->
+  <main>
+    <div>
+      <h3>Escolha o tipo de leitura:</h3>
+      <select id="leitura-opcao">
+          <option value="4">Círculo Mágico (4 Elementos)</option>
+          <option value="3">Fases da Lua (3 Cartas)</option>
+          <option value="8">Roda do Ano (8 Sabbats)</option>
+          <option value="5">Pentagrama (5 Pontos)</option>
+          <option value="7">Altar Sagrado (7 Ferramentas)</option>
+      </select>
+    </div>
+
+    <!-- Container das cartas -->
+    <div class="runas-container" id="runas-container"></div>
+    <button onclick="sortearCartas()">Invocar Cartas</button>
+
+    <!-- Resultado com texto alterado -->
+    <div class="result" id="result">
+      <h2>Significado das Cartas do Livro das Sombras</h2>
+      <div id="runas-meanings"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
